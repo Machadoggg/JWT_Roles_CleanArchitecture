@@ -29,7 +29,20 @@ namespace JWT_Roles_CleanArchitecture.API.Controllers
         }
 
 
-        
+        [Authorize(Policy = "AdminPolicy")]
+        [HttpGet("admin")]
+        public IActionResult AdminEndpoint()
+        {
+            return Ok("Este es un endpoint solo para administradores.");
+        }
+
+        [Authorize(Policy = "UserPolicy")]
+        [HttpGet("user")]
+        public IActionResult UserEndpoint()
+        {
+            return Ok("Este es un endpoint solo para usuarios.");
+        }
+
 
     }
 }
