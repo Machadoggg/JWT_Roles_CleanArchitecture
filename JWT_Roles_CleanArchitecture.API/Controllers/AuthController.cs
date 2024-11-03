@@ -21,11 +21,26 @@ namespace JWT_Roles_CleanArchitecture.API.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] AuthRequest request)
         {
+            //var token = _authService.Authenticate(request);
+            //if (token == null)
+            //    return Unauthorized();
+
+            //return Ok(new { token });
+
             var token = _authService.Authenticate(request);
             if (token == null)
-                return Unauthorized();
+            {
+                    return Unauthorized();
+            }
+            
+            var userRole = User.IsInRole("Admin") ? "Admin" : "User";
 
-            return Ok(new { token });
+            if (userRole == "Admin")
+            {
+                return Ok(new { message = "Redirect to admin area", endpoint = "/api/secure/admin" });
+            }
+            return Ok(new { message = "Redirect to user area", endpoint = "/api/secure/user" });
+
         }
 
 

@@ -39,7 +39,7 @@ namespace JWT_Roles_CleanArchitecture.Infrastructure.Services
         public bool ValidateUser(string username, string password)
         {
             // Valida el usuario (esto debería ser desde la base de datos)
-            return username == "admin" && password == "password";
+            return username == "admin" && password == "password" || username == "user" && password == "password";
         }
     }
 }
