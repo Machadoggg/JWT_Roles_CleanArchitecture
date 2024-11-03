@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JWT_Roles_CleanArchitecture.Core\JWT_Roles_CleanArchitecture.Core.csproj" />
+  </ItemGroup>
+
 </Project>
