@@ -1,6 +1,7 @@
 using JWT_Roles_CleanArchitecture.Application.Services;
 using JWT_Roles_CleanArchitecture.Core.Interfaces;
 using JWT_Roles_CleanArchitecture.Infrastructure.Services;
+using JWT_Roles_CleanArchitecture.Infrastructure.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
