@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT_Roles_CleanArchitecture.Core", "JWT_Roles_CleanArchitecture.Core\JWT_Roles_CleanArchitecture.Core.csproj", "{6B642729-A6CC-4696-AB14-834BFECF3229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT_Roles_CleanArchitecture.Application", "JWT_Roles_CleanArchitecture.Application\JWT_Roles_CleanArchitecture.Application.csproj", "{8F60C565-2BD4-4D8F-84BB-0A5B6FF955AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT_Roles_CleanArchitecture.Infrastructure", "JWT_Roles_CleanArchitecture.Infrastructure\JWT_Roles_CleanArchitecture.Infrastructure.csproj", "{EBD2E339-10DA-4E3D-B22C-B5AC8D95F815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT_Roles_CleanArchitecture.API", "JWT_Roles_CleanArchitecture.API\JWT_Roles_CleanArchitecture.API.csproj", "{C8710DC5-C29F-4BC1-AD74-0D4CACAE2D14}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B642729-A6CC-4696-AB14-834BFECF3229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B642729-A6CC-4696-AB14-834BFECF3229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B642729-A6CC-4696-AB14-834BFECF3229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B642729-A6CC-4696-AB14-834BFECF3229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F60C565-2BD4-4D8F-84BB-0A5B6FF955AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F60C565-2BD4-4D8F-84BB-0A5B6FF955AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F60C565-2BD4-4D8F-84BB-0A5B6FF955AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F60C565-2BD4-4D8F-84BB-0A5B6FF955AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD2E339-10DA-4E3D-B22C-B5AC8D95F815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD2E339-10DA-4E3D-B22C-B5AC8D95F815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD2E339-10DA-4E3D-B22C-B5AC8D95F815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD2E339-10DA-4E3D-B22C-B5AC8D95F815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8710DC5-C29F-4BC1-AD74-0D4CACAE2D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8710DC5-C29F-4BC1-AD74-0D4CACAE2D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8710DC5-C29F-4BC1-AD74-0D4CACAE2D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8710DC5-C29F-4BC1-AD74-0D4CACAE2D14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

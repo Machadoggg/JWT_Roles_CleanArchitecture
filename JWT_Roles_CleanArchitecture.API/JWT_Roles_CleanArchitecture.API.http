@@ -1,0 +1,6 @@
+@JWT_Roles_CleanArchitecture.API_HostAddress = http://localhost:5100
+
+GET {{JWT_Roles_CleanArchitecture.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
