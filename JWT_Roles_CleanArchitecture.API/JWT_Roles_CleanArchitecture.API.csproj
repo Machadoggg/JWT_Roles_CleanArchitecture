@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JWT_Roles_CleanArchitecture.Application\JWT_Roles_CleanArchitecture.Application.csproj" />
+    <ProjectReference Include="..\JWT_Roles_CleanArchitecture.Core\JWT_Roles_CleanArchitecture.Core.csproj" />
+    <ProjectReference Include="..\JWT_Roles_CleanArchitecture.Infrastructure\JWT_Roles_CleanArchitecture.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
